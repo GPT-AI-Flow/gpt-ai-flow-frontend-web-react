@@ -1,9 +1,10 @@
 import '../../../styles/global.css';
 
 import { useEffect } from 'react';
-import { GoogleLogin } from '@react-oauth/google';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavigateFunction, useLocation, useNavigate } from 'react-router-dom';
+
+import { GoogleLogin } from '@react-oauth/google';
 
 import { Button, Form, Input, message } from 'antd';
 import { MailOutlined, LockOutlined } from '@ant-design/icons';
