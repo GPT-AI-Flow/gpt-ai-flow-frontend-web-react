@@ -1,13 +1,12 @@
 import '../../../styles/global.css';
 
 import { useEffect } from 'react';
+import { GoogleLogin } from '@react-oauth/google';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavigateFunction, useLocation, useNavigate } from 'react-router-dom';
 
 import { Button, Form, Input, message } from 'antd';
 import { MailOutlined, LockOutlined } from '@ant-design/icons';
-
-import { GoogleLogin } from '@react-oauth/google';
 
 import { IReduxRootState } from '../../../store/reducer';
 import { USER_LOGIN } from '../../../store/actions/userActions';
