@@ -25,9 +25,7 @@ const getSuccessLoginRedirectUrl = (navigate: NavigateFunction, hasFromQuery: bo
     return;
   }
   if (hasFromQuery && from === 'littleRedBook') {
-    navigate(
-      `/app/proMode?version=v4&role=xiaoHongShu-platform&tabPane_uuid=writingPostAgent%20-%20xiaoHongShu%20platform`,
-    );
+    navigate(`/app/proMode_v2/xiaohongshu`);
     window.location.reload();
     return;
   }
